@@ -1,12 +1,11 @@
 import webbrowser as web
 import time
 import re
-price = 20000 #Used for calculating the total price that the person eneds to pay
+price = 10000 #Used for calculating the total price that the person eneds to pay
 a = 0 #Variable used later for a while function
 #Language Selection
 print("Hello and welcome to the American Public School portal!")
 time.sleep(0.5) #to make it flow nicer
-
 #Sign up page
 regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$' #Email format
 print("It seems that you dont have an account. You will be redirected to our sign up page...")
@@ -56,8 +55,6 @@ while True:
         passwordLogin=input("Password: ")
 #Asking the parents how they would like to proceed
 time.sleep(3)
-
-
 b = 1 #used to break the loop later
 while b == 1:
     
@@ -118,13 +115,12 @@ while b == 1:
     
     #age sec
             while True:    
-                if age>=19:
-                    print("Please enter an age less than 19")
+                if age>=19 :
+                    print("Your son is ineligible to enroll in this school due to their age. Please retry")
                     age=int(input("Please enter your childs age: "))
-       
-       
+
                 elif age<19:
-                    grade=int(input("what grade would you like to register your child in? (please not that kindegarten registrations are not avalible.)"))
+                    grade=int(input("What grade would you like to register your child in? (please note that kindergarten registrations are not avalible.)"))
                 break
 
 
@@ -136,86 +132,86 @@ while b == 1:
        
     #grade1 sec
                 if grade ==1:
-                    print("welcome to grade 1 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your child's ID so he can be registred to this grade.")
+                    print("Welcome to grade 1 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     #end of grade1 sec
        
     #grade2 sec
                 elif grade ==2:
-                    print("welcome to grade 2 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 2 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     #end of grade2 sec
        
     #grade3 sec
                 elif grade ==3:
-                    print("welcome to grade 3 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 3 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     #end of grade3 sec
        
     #grade4 sec
                 elif grade ==4:
-                    print("welcome to grade 4 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 4 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     #end of grade4 sec
     
     #grade5 sec
                 elif grade ==5:
-                    print("welcome to grade 5 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 5 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
      #end of grade5 sec  
        
     #grade6 sec
                 elif grade ==6:
-                    print("welcome to grade 6 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 6 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     # end of grade6 sec
     
     # grade7 sec
                 elif grade ==7:
-                    print("welcome to grade 7 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 7 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     # end of grade7 sec
     
     #grade8 sec
                 elif grade ==8:
-                    print("welcome to grade 8 registration! Please complete the following steps:")
-                    print("There are no electives to choose from for this year. Please enter your childs ID so he can be registred to this grade.")
+                    print("Welcome to grade 8 registration! Please complete the following steps:")
+                    print("Please note that there are no electives to choose from for this year.")
                     break
     # end of grade8 sec
     
     # grade9 sec
                 elif grade ==9:
-                    print("welcome to grade 9 registration! Please complete the following steps:")
+                    print("Welcome to grade 9 registration! Please complete the following steps:")
            
             #electives sec
-                    electives = int(input("""please pick one out of the three electives for your child:
-            1) Nutrition
+                    electives = int(input("""Please pick one out of the three electives for your child:
+            1)Nutrition
             2)Art
             3)Marketing
             """))
                     while True:
                         if electives ==1:
                             e="Nutrition"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==2:
                             e="Art"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==3:
                             e="Marketing"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         else:
                             print("No such elective exsists")
-                            electives = int(input("""please pick one out of the three electives for your child:
+                            electives = int(input("""Please pick one out of the three electives for your child:
             1)Nutrition
             2)Art
             3)Marketing
@@ -228,29 +224,29 @@ while b == 1:
        
     # grade10 sec
                 elif grade ==10:
-                    print("welcome to grade 10 registration! Please complete the following steps:")
+                    print("Welcome to grade 10 registration! Please complete the following steps:")
              #electives sec
-                    electives = int(input("""please pick one out of the three electives for your child:
-            1) Physics
+                    electives = int(input("""Please pick one out of the three electives for your child:
+            1)Physics
             2)Photoshop
             3)Python
             """))
                     while True:
                         if electives ==1:
-                            e="physics"
-                            print("you have succesfully registered your child in",e,"class")
+                            e="Physics"
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==2:
                             e="Photoshop"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==3:
                             e="Python"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         else:
                             print("No such elective exsists")
-                            electives = int(input("""please pick one out of the three electives for your child:
+                            electives = int(input("""Please pick one out of the three electives for your child:
             1)Physics
             2)Photoshop
             3)Python
@@ -263,9 +259,9 @@ while b == 1:
        
     #grade11 sec
                 elif grade ==11:
-                    print("welcome to grade 11 registration! Please complete the following steps:")
+                    print("Welcome to grade 11 registration! Please complete the following steps:")
             #electives sec
-                    electives = int(input("""please pick one out of the three electives for your child:
+                    electives = int(input("""Please pick one out of the three electives for your child:
             1)Organic Chemistry
             2)Electrical Physics
             3)Python 2
@@ -273,19 +269,19 @@ while b == 1:
                     while True:
                         if electives ==1:
                             e="Organ Chemistry"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==2:
                             e="Electrical Physics"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==3:
                             e="Python 2"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         else:
                             print("No such elective exsists")
-                            electives = int(input("""please pick one out of the three electives for your child:
+                            electives = int(input("""Please pick one out of the three electives for your child:
             1)Organic Chemistry
             2)Electrical Physics
             3)Python 2
@@ -298,32 +294,32 @@ while b == 1:
        
        
                 elif grade ==12:
-                    print("welcome to grade 12 registration please complete the following steps:")
+                    print("Welcome to grade 12 registration! Please complete the following steps:")
             #electives sec
-                    electives = int(input("""please pick one out of the three electives for your child:
+                    electives = int(input("""Please pick one out of the three electives for your child:
             1)Arabian History
-            2) Game Design
+            2)Game Design
             3)Advanced Calculus
             """))
                     electives=int(input("Please pick an elective:"))
                     while True:
                         if electives ==1:
                             e="Arabian History"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==2:
                             e="Game Design"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         elif electives==3:
                             e="Advanced Calculus"
-                            print("you have succesfully registered your child in",e,"class")
+                            print("You have succesfully registered your child in",e,"class.")
                             break
                         else:
                             print("No such elective exsists")
-                            electives = int(input("""please pick one out of the three electives for your child:
+                            electives = int(input("""Please pick one out of the three electives for your child:
             1)Arabian History
-            2) Game Design
+            2)Game Design
             3)Advanced Calculus
             """))
             #end of electives sec
@@ -337,7 +333,7 @@ while b == 1:
     
     
     #emirates id sec:
-            ID=int(input("please give us all 15 integers of your childs ID:"))
+            ID=int(input("Please input all 15 integers of your childs ID:"))
     
             while True:
                 strem=str(ID)
@@ -345,21 +341,21 @@ while b == 1:
                     print("Thank you! Your childs ID has been put into the system")
                     break
                 else:
-                    print("that is not a valid emirates ID number!")
-                    ID=int(input("please give us all 15 intgers in your childs emirates ID without the dashes:"))
-            print("your",age,"year old",gender,"child, "+name+",with emirates id number",ID,"has succesfuly been registred in grade",grade,". We are excited to welcome him!")
+                    print("That is not a valid ID number.")
+                    ID=int(input("Please input all 15 integers of your childs ID:"))
+            print("Your",age,"year old",gender,"child, "+name+",with ID number",ID,"has succesfuly been registred in grade",grade,". We are excited to welcome him into our school!")
             while True:
-                anotherchild=input("Would you like to register another child ")
-                if anotherchild.lower()=="yes":
+                anotherchild=input("Would you like to register another child? Please reply with y or n: ")
+                if anotherchild.lower()=="y":
                     print("You will need to refill all the previous forms but for the new child")
                     print("The price you have to pay until now is",price)
-                    price +=20000
+                    price +=10000
                     break
-                elif anotherchild.lower()=="no":
+                elif anotherchild.lower()=="n":
                     print("You have finished the process, and the price you will have to pay is",price,"dollars")
                     print("Thank you for enrolling your child in our school. Have a great day!")
                     a=1
                     b+=1
                     break
                 else:
-                    print("This answer is not valid please answer with yes or no")
+                    print("This answer is not valid. Please answer with yes or no")
